@@ -1,0 +1,35 @@
+!!! 5
+html(lang='en')
+  head
+    meta(http-equiv="X-UA-Compatible", content="IE=9")
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title Scalable Playing Cards Demo
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore-min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/hogan.js/2.0.0/hogan.js')
+    //- script(src='/js/lib/jquery-1.8.2.min.js')
+    //- script(src='/js/lib/underscore-min.js')
+    //- script(src='/js/lib/backbone-min.js')
+    //- script(src='/js/lib/hogan-2.0.0.min.js')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+  body
+    .container-fluid
+      .row
+        h1 Scalable Playing Cards Demo
+      .row &nbsp;
+      .row &nbsp;
+      .row &nbsp;
+      .row &nbsp;
+      #table.span12
+        #cards.span12
+
+    include mixins/playingcards
+    script(src='/js/lib/jquery.flippy.min.js')
+    script(src='/js/lib/dat.gui.min.js')
+    script(src='/js/playingcards.js')
+    script(src='/js/demo.js')
+    link(rel='stylesheet', href='/css/playingcards.css', media='all')
+    link(rel='stylesheet', href='/css/demo.css', media='all')

@@ -1,0 +1,43 @@
+import os
+import time
+from fabric.api import *
+from fabric.contrib.console import confirm
+from fabric.contrib.project import rsync_project
+
+def old():
+  local("npm outdated")
+
+def remove_compiled(in_type, out_type, dirs = "."):
+  with settings(warn_only=True):
+    with lcd("."):
+      files = local(("find %s -name \*%s" % (dirs, in_type)), capture=True)
+      lines = files.split('\n')
+      for line in lines:
+        if line.find("node_modules") == -1:
+          path, ext = os.path.splitext(line)
+          path += out_type
+          if os.path.exists(path):
+            local("rm %s" % path)
+
+def clean():
+  with settings(warn_only=True):
+    remove_compiled(".coffee", ".js")
+    remove_compiled(".styl", ".css")
+    remove_compiled(".jade", ".html")
+
+def build():
+  with settings(warn_only=True):
+    local("coffee -c *.coffee")
+    local("coffee -c lib")
+    local("coffee -c public")
+    local("coffee -c routes")
+    local("stylus public/css")
+    local("jade public")
+
+def dev():
+  build()
+  local("node app.js")
+
+def dist():
+  local("jade -P views/demo.jade")
+  local("jade -P views/mixins/playingcards.jade")

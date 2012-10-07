@@ -1,0 +1,173 @@
+transform()
+  -ms-transform: arguments
+  -moz-transform: arguments
+  -webkit-transform: arguments
+  transform: arguments
+
+cardem(value)
+  (value / 200 * 16)em
+
+suite-size = 5.8em
+
+suitem(value)
+  (cardem(value) / suite-size)
+
+.card
+  background-color: #fff
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  -moz-border-radius: cardem(10)
+  -webkit-border-radius: cardem(10)
+  border-radius: cardem(10)
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+  float: left
+  width: cardem(200)
+  height: cardem(280)
+  margin: 0 cardem(15) cardem(15) 0
+  position: relative
+  z-index: 2
+
+  &.noshadow
+    -moz-box-shadow: none
+    -webkit-box-shadow: none
+    box-shadow: none
+
+  .card-back
+    img
+      width: cardem(200)
+      height: cardem(280)
+
+  .flipped
+    transform(rotateY(180deg))
+    // -ms-transform: rotateY(180deg)
+    // -moz-transform: rotateY(180deg)
+    // -webkit-transform: rotateY(180deg)
+    // transform: rotateY(180deg)
+
+  .heart
+  .diamond
+    color: red
+
+  .corner
+    line-height: 1
+    // overflow: hidden
+    position: absolute
+    text-align: center
+    span
+      display: block
+      font-size: 1.5em
+      font-weight: bold
+    .number
+      font-size: 2em
+      height: cardem(24) / 2
+      line-height: cardem(24) / 2
+    &.top
+      left: cardem(8)
+      top: cardem(12)
+    &.bottom
+      bottom: cardem(12)
+      right: cardem(8)
+      transform(rotate(180deg))
+
+  .card-ace span.suit.middle_center
+    font-size: cardem(128)
+    left: suitem(33)
+    top: suitem(43)
+
+  .card-ten .corner .number
+    font-size: 1.5em
+    //font-stretch: condensed
+    //letter-spacing: -0.9px // -1.8px
+
+  .face img
+    position: absolute
+    left:  cardem(32)
+    top:   cardem(26)
+    width: cardem(135)
+    height: cardem(228)
+
+  .suit
+    font-size: suite-size
+    font-weight: bold
+    height: suitem(60)
+    line-height: suitem(60)
+    overflow: hidden
+    position: absolute
+    text-align: center
+    width: suitem(50)
+
+    &.top_center
+      left: suitem(76)
+      top: suitem(24)
+
+    &.top_left
+      left: suitem(30)
+      top: suitem(24)
+
+    &.top_right
+      right: suitem(30)
+      top: suitem(24)
+
+    &.middle_center
+      left: suitem(76)
+      top: suitem(110)
+
+    &.middle_top
+      left: suitem(76)
+      top: suitem(70)
+
+    &.middle_bottom
+      bottom: suitem(70)
+      left: suitem(76)
+      transform(rotate(180deg))
+
+    &.middle_left
+      left: suitem(30)
+      top: suitem(110)
+
+    &.middle_right
+      right: suitem(30)
+      top: suitem(110)
+
+    &.middle_top_center
+      left: suitem(76)
+      top: suitem(60)
+
+    &.middle_top_left
+      left: suitem(30)
+      top: suitem(80)
+
+    &.middle_top_right
+      right: suitem(30)
+      top: suitem(80)
+
+    &.middle_bottom_left
+      bottom: suitem(80)
+      left: suitem(30)
+      transform(rotate(180deg))
+
+    &.middle_bottom_right
+      bottom: suitem(80)
+      right: suitem(30)
+      transform(rotate(180deg))
+
+    &.middle_bottom_center
+      bottom: suitem(60)
+      left: suitem(76)
+      transform(rotate(180deg))
+
+    &.bottom_center
+      bottom: suitem(24)
+      left: suitem(76)
+      transform(rotate(180deg))
+
+    &.bottom_left
+      bottom: suitem(24)
+      left: suitem(30)
+      transform(rotate(180deg))
+
+    &.bottom_right
+      bottom: suitem(24)
+      right: suitem(30)
+      transform(rotate(180deg))
