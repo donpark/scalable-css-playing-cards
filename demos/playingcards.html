@@ -1,0 +1,82 @@
+
+<script id="card-back" type="text/x-mustache-template">
+  <div class="card-back"><span class="middle_center"><img src="img/back.png"/></span></div>
+</script>
+<script id="card-two" type="text/x-mustache-template">
+  <div class="card-two">
+    <div class="corner top"><span class="number">2</span><span>{{suite.symbol}}</span></div><span class="suit top_center">{{suite.symbol}}</span><span class="suit bottom_center">{{suite.symbol}}</span>
+    <div class="corner bottom"><span class="number">2</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-three" type="text/x-mustache-template">
+  <div class="card-three">
+    <div class="corner top"><span class="number">3</span><span>{{suite.symbol}}</span></div><span class="suit top_center">{{suite.symbol}}</span><span class="suit middle_center">{{suite.symbol}}</span><span class="suit bottom_center">{{suite.symbol}}</span>
+    <div class="corner bottom"><span class="number">3</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-four" type="text/x-mustache-template">
+  <div class="card-four">
+    <div class="corner top"><span class="number">4</span><span>{{suite.symbol}}</span></div><span class="suit top_left">{{suite.symbol}}</span><span class="suit top_right">{{suite.symbol}}</span><span class="suit bottom_left">{{suite.symbol}}</span><span class="suit bottom_right">{{suite.symbol}}</span>
+    <div class="corner bottom"><span class="number">4</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-five" type="text/x-mustache-template">
+  <div class="card-five">
+    <div class="corner top"><span class="number">5</span><span>{{suite.symbol}}</span></div><span class="suit top_left">{{suite.symbol}}</span><span class="suit top_right">{{suite.symbol}}</span><span class="suit middle_center">{{suite.symbol}}</span><span class="suit bottom_left">{{suite.symbol}}</span><span class="suit bottom_right">{{suite.symbol}}</span>
+    <div class="corner bottom"><span class="number">5</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-six" type="text/x-mustache-template">
+  <div class="card-six">
+    <div class="corner top"><span class="number">6</span><span>{{suite.symbol}}</span></div><span class="suit top_left">{{suite.symbol}}</span><span class="suit top_right">{{suite.symbol}}</span><span class="suit middle_left">{{suite.symbol}}</span><span class="suit middle_right">{{suite.symbol}}</span><span class="suit bottom_left">{{suite.symbol}}</span><span class="suit bottom_right">{{suite.symbol}}</span>
+    <div class="corner bottom"><span class="number">6</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-seven" type="text/x-mustache-template">
+  <div class="card-seven">
+    <div class="corner top"><span class="number">7</span><span>{{suite.symbol}}</span></div><span class="suit top_left">{{suite.symbol}}</span><span class="suit top_right">{{suite.symbol}}</span><span class="suit middle_left">{{suite.symbol}}</span><span class="suit middle_top">{{suite.symbol}}</span><span class="suit middle_right">{{suite.symbol}}</span><span class="suit bottom_left">{{suite.symbol}}</span><span class="suit bottom_right">{{suite.symbol}}</span>
+    <div class="corner bottom"><span class="number">7</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-eight" type="text/x-mustache-template">
+  <div class="card-eight">
+    <div class="corner top"><span class="number">8</span><span>{{suite.symbol}}</span></div><span class="suit top_left">{{suite.symbol}}</span><span class="suit top_right">{{suite.symbol}}</span><span class="suit middle_left">{{suite.symbol}}</span><span class="suit middle_top">{{suite.symbol}}</span><span class="suit middle_right">{{suite.symbol}}</span><span class="suit middle_bottom">{{suite.symbol}}</span><span class="suit bottom_left">{{suite.symbol}}</span><span class="suit bottom_right">{{suite.symbol}}</span>
+    <div class="corner bottom"><span class="number">8</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-nine" type="text/x-mustache-template">
+  <div class="card-nine">
+    <div class="corner top"><span class="number">9</span><span>{{suite.symbol}}</span></div><span class="suit top_left">{{suite.symbol}}</span><span class="suit top_right">{{suite.symbol}}</span><span class="suit middle_top_left">{{suite.symbol}}</span><span class="suit middle_center">{{suite.symbol}}</span><span class="suit middle_top_right">{{suite.symbol}}</span><span class="suit bottom_left">{{suite.symbol}}</span><span class="suit bottom_right">{{suite.symbol}}</span><span class="suit middle_bottom_left">{{suite.symbol}}</span><span class="suit middle_bottom_right">{{suite.symbol}}</span>
+    <div class="corner bottom"><span class="number">9</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-ten" type="text/x-mustache-template">
+  <div class="card-ten">
+    <div class="corner top"><span class="number">10</span><span>{{suite.symbol}}</span></div><span class="suit top_left">{{suite.symbol}}</span><span class="suit top_right">{{suite.symbol}}</span><span class="suit middle_top_left">{{suite.symbol}}</span><span class="suit middle_top_center">{{suite.symbol}}</span><span class="suit middle_top_right">{{suite.symbol}}</span><span class="suit bottom_left">{{suite.symbol}}</span><span class="suit bottom_right">{{suite.symbol}}</span><span class="suit middle_bottom_center">{{suite.symbol}}</span><span class="suit middle_bottom_left">{{suite.symbol}}</span><span class="suit middle_bottom_right">{{suite.symbol}}</span>
+    <div class="corner bottom"><span class="number">10</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-jack" type="text/x-mustache-template">
+  <div class="card-jack">
+    <div class="corner top"><span class="number">J</span><span>{{suite.symbol}}</span></div><span class="face middle_center"><img src="img/faces/face-jack-{{suite.name}}.png"/></span>
+    <div class="corner bottom"><span class="number">J</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-queen" type="text/x-mustache-template">
+  <div class="card-queen">
+    <div class="corner top"><span class="number">Q</span><span>{{suite.symbol}}</span></div><span class="face middle_center"><img src="img/faces/face-queen-{{suite.name}}.png"/></span>
+    <div class="corner bottom"><span class="number">Q</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-king" type="text/x-mustache-template">
+  <div class="card-king">
+    <div class="corner top"><span class="number">K</span><span>{{suite.symbol}}</span></div><span class="face middle_center"><img src="img/faces/face-king-{{suite.name}}.png"/></span>
+    <div class="corner bottom"><span class="number">K</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>
+<script id="card-ace" type="text/x-mustache-template">
+  <div class="card-ace">
+    <div class="corner top"><span class="number">A</span><span>{{suite.symbol}}</span></div><span class="suit middle_center">{{suite.symbol}}</span>
+    <div class="corner bottom"><span class="number">A</span><span>{{suite.symbol}}</span></div>
+  </div>
+</script>

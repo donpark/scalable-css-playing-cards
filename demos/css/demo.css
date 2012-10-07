@@ -1,0 +1,13 @@
+body {
+  background-color: #eee;
+  margin-left: 20px;
+  margin-top: 120px;
+}
+#table {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+#cards {
+  font-size: 14px;
+}
