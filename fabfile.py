@@ -39,5 +39,8 @@ def dev():
   local("node app.js")
 
 def dist():
-  local("jade -P views/demo.jade")
-  local("jade -P views/mixins/playingcards.jade")
+  build()
+  local("cp public/js/*.js gh-pages/demos/js")
+  local("cp public/css/*.css gh-pages/demos/css")
+  local("jade -P -O gh-pages/demos views/demo.jade")
+  local("jade -P -O gh-pages/demos views/mixins/playingcards.jade")
