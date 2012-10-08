@@ -23,7 +23,7 @@ $ ->
     switch value
       when 'sorted' then deckView.sort()
       when 'random' then deckView.shuffle()
-  datgui.add(settings, 'rotation').min(0).max(360).step(1).onChange (value) ->
+  datgui.add(settings, 'rotation').min(-180).max(180).step(1).onChange (value) ->
     deckView.$el.css
       '-ms-transform': "rotate(#{value}deg)"
       '-moz-transform': "rotate(#{value}deg)"
