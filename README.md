@@ -21,4 +21,4 @@ Supported browsers are:
 
 # Notable Issues
 
-* [Android has *weird* clipping, likely a font metric difference issue](scalable-css-playing-cards/issues/1)
+* [Android has *weird* clipping, likely a font metric difference issue](/donpark/scalable-css-playing-cards/issues/1)
