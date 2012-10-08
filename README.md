@@ -4,3 +4,6 @@ This project is a heavily modified version of Zack Waugh's [Helveticards](http:/
 2. Card size may be specific to individual cards or set of cards.
 3. Face cards have standard Anglo-American court images rendered from Chris Aguilar's [vectorized-playing-cards](http://code.google.com/p/vectorized-playing-cards/) SVG files.
 4. Cards can be flipped to show the back-side.
+
+Supported browsers: recent versions of Chrome, Firefox, Safari and IE9.
+Renders and resizes just fine on Mobile Safari but dat-gui gets quirky to use.
