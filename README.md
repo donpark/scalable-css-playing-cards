@@ -7,7 +7,7 @@ This project is a heavily modified version of Zack Waugh's [Helveticards](http:/
 3. Face cards have standard Anglo-American court images rendered from Chris Aguilar's [vectorized-playing-cards](http://code.google.com/p/vectorized-playing-cards/) SVG files.
 4. Cards can be flipped to show the back-side.
 
-At lesat for now, this is not a *fire-and-forget* project to me so please do suggest features and file issues.
+*At least for now, this is not a fire-and-forget project to me so please do suggest features and file issues.*
 
 # Compatibility
 
