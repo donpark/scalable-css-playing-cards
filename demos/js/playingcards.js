@@ -51,17 +51,17 @@
     },
     diamond: {
       name: 'diamond',
-      symbol: '♦',
+      symbol: '&diams;',
       color: 'red'
     },
     spade: {
       name: 'spade',
-      symbol: '♠',
+      symbol: '&spades;',
       color: 'black'
     },
     heart: {
       name: 'heart',
-      symbol: '♥',
+      symbol: '&hearts;',
       color: 'red'
     }
   };

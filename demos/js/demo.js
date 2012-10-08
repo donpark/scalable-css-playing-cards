@@ -37,7 +37,7 @@
           return deckView.shuffle();
       }
     });
-    return datgui.add(settings, 'rotation').min(0).max(360).step(1).onChange(function(value) {
+    return datgui.add(settings, 'rotation').min(-180).max(180).step(1).onChange(function(value) {
       return deckView.$el.css({
         '-ms-transform': "rotate(" + value + "deg)",
         '-moz-transform': "rotate(" + value + "deg)",
