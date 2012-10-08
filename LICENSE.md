@@ -34,6 +34,14 @@ http://www.gnu.org/copyleft/lesser.html
 
 Generally, this means the cards are free to use (commercially and non commercially) but must be properly attributed (see "README.txt" file) and (The library itself, not your project) re-distributed only under the same license.
 
+## Card Back Image
+
+Image in `assets/gray-scott.psd` is from Michal Migursky's article
+[generating repeating patterns](http://mike.teczno.com/notes/gray-scott-reaction-diffusion.html)
+which is an example of Gray-Scott model of reaction-diffsion. Python source code used to generate
+the pattern can be found in the article.
+
+
 ## Script files
 
 ### FLIPPY jQuery plugin 1.0.1
