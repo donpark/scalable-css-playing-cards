@@ -1,6 +1,6 @@
 # Intro
 
-This project is a heavily modified version of Zack Waugh's [Helveticards](http://zachwaugh.com/helveticards/index.html) with following notable differences:
+This project is a heavily modified version of [Zack Waugh's Helveticards](/zachwaugh/Helveticards) with following notable differences:
 
 1. Cards are scalable.
 2. Card size may be specific to individual cards or set of cards.
@@ -21,4 +21,4 @@ Supported browsers are:
 
 # Notable Issues
 
-* [Android has *weird* clipping, likely a font metric difference issue](issues/1)
+* [Android has *weird* clipping, likely a font metric difference issue](scalable-css-playing-cards/issues/1)
