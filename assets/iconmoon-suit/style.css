@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'suit';
+	src:url('fonts/suit.eot');
+	src:url('fonts/suit.eot?#iefix') format('embedded-opentype'),
+		url('fonts/suit.svg#suit') format('svg'),
+		url('fonts/suit.woff') format('woff'),
+		url('fonts/suit.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'suit';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-suit-"]:before, [class*=" icon-suit-"]:before {
+	font-family: 'suit';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-suit-spades:before {
+	content: "\2660";
+}
+.icon-suit-clubs:before {
+	content: "\2663";
+}
+.icon-suit-diamonds:before {
+	content: "\2666";
+}
+.icon-suit-heart:before {
+	content: "\2665";
+}
