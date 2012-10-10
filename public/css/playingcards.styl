@@ -7,10 +7,10 @@ transform()
 cardem(value)
   (value / 200 * 16)em
 
-suite-size = 5.8em
+suit-size = 5.8em
 
 suitem(value)
-  (cardem(value) / suite-size)
+  (cardem(value) / suit-size)
 
 .card
   background-color: #fff
@@ -88,7 +88,7 @@ suitem(value)
     height: cardem(228)
 
   .suit
-    font-size: suite-size
+    font-size: suit-size
     font-weight: bold
     height: suitem(60)
     line-height: suitem(60)

@@ -25,7 +25,7 @@ class Templates
 # Lib.card
 #=========================================================================================================
 
-SUITE =
+SUIT =
   club:
     name: 'club'
     symbol: '♣'
@@ -43,11 +43,11 @@ SUITE =
     symbol: '&hearts;'
     color: 'red'
 
-SUITES = [
-  SUITE.club
-  SUITE.diamond
-  SUITE.spade
-  SUITE.heart
+SUITS = [
+  SUIT.club
+  SUIT.diamond
+  SUIT.spade
+  SUIT.heart
 ]
 
 RANK = RANK =
@@ -132,11 +132,11 @@ class CardView extends Backbone.View
     front = @model.get 'front'
     if front
       rank = @model.get 'rank'
-      suite = @model.get 'suite'
+      suit = @model.get 'suit'
       $content = $ @options.templates.render "card-#{rank.name}",
         rank: rank
-        suite: suite
-      $content.addClass suite.name
+        suit: suit
+      $content.addClass suit.name
     else
       $content = $ @options.templates.render "card-back"
     if wrap
@@ -154,20 +154,20 @@ class CardView extends Backbone.View
 class DeckModel extends Backbone.Collection
   initialize: (models, options) ->
     front = options.front or false
-    for suite in SUITES
+    for suit in SUITS
       for rank in RANKS
         card = new CardModel
           rank: rank
-          suite: suite
+          suit: suit
           front: front
         @add card
   sort: ->
     @models = _.sortBy @models, (model) ->
-      suite = model.get 'suite'
+      suit = model.get 'suit'
       rank = model.get 'rank'
-      suiteOrder = SUITES.indexOf(suite)
+      suitOrder = SUITS.indexOf(suit)
       rankOrder = RANKS.indexOf(rank)
-      suiteOrder * 13 + rankOrder
+      suitOrder * 13 + rankOrder
   shuffle: ->
     @models = _.shuffle @models
 
@@ -200,9 +200,9 @@ class DeckView extends Backbone.View
 NAMESPACE = window ? this
 NAMESPACE.PlayingCards =
   RANK: RANK
-  SUITE: SUITE
+  SUIT: SUIT
   RANKS: RANKS
-  SUITES: SUITES
+  SUITS: SUITS
   CardModel: CardModel
   CardView: CardView
   DeckModel: DeckModel
