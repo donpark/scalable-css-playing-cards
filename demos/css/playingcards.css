@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Suit-Regular';
+  src: url("../fonts/suit-regular.eot");
+  src: url("../fonts/suit-regular.eot?#iefix") format('embedded-opentype'), url("../fonts/suit-regular.woff") format('woff'), url("../fonts/suit-regular.ttf") format('truetype'), url("../fonts/suit-regular.svg#suit-regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .card {
   background-color: #fff;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Suit-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -moz-border-radius: 0.8em;
   -webkit-border-radius: 0.8em;
   border-radius: 0.8em;
@@ -31,7 +38,7 @@
 }
 .card .heart,
 .card .diamond {
-  color: #f00;
+  color: #df0000;
 }
 .card .corner {
   line-height: 1;
@@ -77,13 +84,12 @@
 }
 .card .suit {
   font-size: 5.8em;
-  font-weight: bold;
-  height: 0.8275862068965517em;
-  line-height: 0.8275862068965517em;
-  overflow: hidden;
+  font-weight: normal;
+  width: 0.6896551724137931em;
+  height: 0.786206896551724em;
+  line-height: 0.786206896551724em;
   position: absolute;
   text-align: center;
-  width: 0.6896551724137931em;
 }
 .card .suit.top_center {
   left: 1.0482758620689656em;
