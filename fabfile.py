@@ -42,6 +42,7 @@ def site():
   build()
   local("cp public/js/*.js gh-pages/demos/js")
   local("cp public/css/*.css gh-pages/demos/css")
+  local("cp -Rf public/fonts gh-pages/demos")
   local("jade -P -O gh-pages/demos views/demo.jade")
   local("jade -P -O gh-pages/demos views/mixins/playingcards.jade")
 
@@ -50,5 +51,6 @@ def dist():
   local("jade -P -O dist views/mixins/playingcards.jade")
   local("cp public/css/playingcards.css dist")
   local("cp public/js/playingcards.js dist")
+  local("cp -Rf public/fonts dist")
   # local("uglifyjs dist/playingcards.js > dist/playingcards.min.js")
   

@@ -12,9 +12,19 @@ suit-size = 5.8em
 suitem(value)
   (cardem(value) / suit-size)
 
+@font-face
+  font-family: 'Suit-Regular';
+  src: url('../fonts/suit-regular.eot');
+  src: url('../fonts/suit-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/suit-regular.woff') format('woff'),
+       url('../fonts/suit-regular.ttf') format('truetype'),
+       url('../fonts/suit-regular.svg#suit-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 .card
   background-color: #fff
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-family: 'Suit-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif
   -moz-border-radius: cardem(10)
   -webkit-border-radius: cardem(10)
   border-radius: cardem(10)
@@ -47,7 +57,7 @@ suitem(value)
 
   .heart
   .diamond
-    color: red
+    color: #df0000
 
   .corner
     line-height: 1
@@ -89,13 +99,13 @@ suitem(value)
 
   .suit
     font-size: suit-size
-    font-weight: bold
-    height: suitem(60)
-    line-height: suitem(60)
-    overflow: hidden
+    font-weight: normal // bold
+    width: suitem(50) // suitem(50)
+    height: suitem(57) // suitem(60)
+    line-height: suitem(57) // suitem(60)
+    // overflow: hidden
     position: absolute
     text-align: center
-    width: suitem(50)
 
     &.top_center
       left: suitem(76)
