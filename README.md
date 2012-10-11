@@ -15,10 +15,6 @@ Supported browsers are:
 
 * Recent versions of Chrome, Firefox, Safari
 * IE9
-* Mobile Safari [1]
+* iOS and Android browsers [1]
 
-[1] Renders and resizes just fine on Mobile Safari but dat-gui gets quirky to use.
-
-# Notable Issues
-
-* [Android has *weird* clipping, likely a font metric difference issue](/donpark/scalable-css-playing-cards/issues/1)
+[1] Renders and resizes just fine but dat-gui gets quirky to use.
