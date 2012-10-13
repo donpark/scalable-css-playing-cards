@@ -5,7 +5,8 @@ This project is a heavily modified version of [Zack Waugh's Helveticards](/zachw
 1. Cards are scalable.
 2. Card size may be specific to individual cards or set of cards.
 3. Face cards have standard Anglo-American court images rendered from Chris Aguilar's [vectorized-playing-cards](http://code.google.com/p/vectorized-playing-cards/) SVG files.
-4. Cards can be flipped to show the back-side.
+4. Uses custom font for suit symbols to provide visual consistency.
+5. Cards can be flipped to show the back-side.
 
 *At least for now, this is not a fire-and-forget project to me so please do suggest features and file issues.*
 
